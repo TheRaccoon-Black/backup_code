@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="ganti">Mengganti Kontent dengan Ajax</p>
+    <button type="button" onclick="loadDoc()">Ganti Kontent dengan isi
+        Text</button>
+    <script>
+        function loadDoc() {
+            var xhttp;
+            if (window.XMLHttpRequest) {
+                // code for modern browsers
+                xhttp = new XMLHttpRequest();
+            } else {
+                // code for IE6, IE5
+                xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xhttp.onreadystatechange = function() {
+                if (xhttp.readyState == 4 && xhttp.status == 200) {
+                    document.getElementById("ganti").innerHTML =
+                        xhttp.responseText;
+                }
+            };
+            xhttp.open("GET", "coba.txt", true);
+            xhttp.send();
+        }
+    </script>
+</body>
+
+</html>

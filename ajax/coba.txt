@@ -1,0 +1,7 @@
+buat folder di htdocs/nama_folder (misalkan folder ..xampp/htdocs/1234)
+- aktikan server apache dan mysql
+- kemudian buat sebuah file bertipe txt. Misalnya coba.txt dan simpan pada folder
+kerja anda dan isi sembarang tulisan.
+- Langkah selanjutnya , buatlah file html dengan nama sembarang. Misalnya,
+akses_file_nim.html.
+- Tuliskan source code berikut:
